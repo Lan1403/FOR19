@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Carbon App</h2>
+<p>Track and manage your carbon footprint.</p>
+
+<a href="{{ url_for('carbon_app.new_entry') }}" class="btn btn-warning me-2">New Entry</a>
+<a href="{{ url_for('carbon_app.your_data') }}" class="btn btn-info">Your Data</a>
+
+{% endblock %}
