@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Weekly Challenge - Chapter 5</p>
+      <h1>Carbon Pricing Lab</h1>
+      <p class="lead">
+        This app estimates transportation emissions using simple formulas and
+        approximate factors. Start with the methodology page, then connect the
+        same logic to the carbon app calculator.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="{{ url_for('methodology') }}">View Methodology</a>
+        <a class="btn btn-outline" href="{{ url_for('carbon_app') }}">Open Carbon App</a>
+      </div>
+      <div class="register-card">
+        <h3>Register</h3>
+        <p class="note">Create an account to save scenarios and compare runs.</p>
+        <a class="btn" href="{{ url_for('register') }}">Go to registration</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Model Overview</h3>
+      <p>
+        We estimate trip emissions from distance and transport-mode factors,
+        then aggregate results over a chosen time period.
+      </p>
+      <div class="mini-formula">
+        \[ E_{trip} = D \times EF \]
+      </div>
+      <p class="note">See the Methodology page for variables and assumptions.</p>
+    </div>
+  </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+{% endblock %}
+{% block content %}
+<section class="register-hero fade-up">
+  <div class="container">
+    <p class="eyebrow">Register</p>
+    <h1>Create your account</h1>
+    <p class="lead">
+      Sign up to save scenarios and track your carbon pricing assumptions.
+    </p>
+  </div>
+</section>
+
+<section class="register-panel">
+  <div class="container">
+    <div class="panel">
+      <h3>Registration form</h3>
+      <form class="register-form" action="" method="post">
+        <label class="field">
+          Username
+          <input type="text" name="username" placeholder="e.g. eco_analyst" required>
+        </label>
+        <label class="field">
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label class="field">
+          Password
+          <input type="password" name="password" placeholder="Create a password" required>
+        </label>
+        <label class="field">
+          Confirm password
+          <input type="password" name="password_confirm" placeholder="Repeat password" required>
+        </label>
+        <button class="btn" type="submit">Register</button>
+      </form>
+      <p class="note">This page is front-end only for now.</p>
+    </div>
+  </div>
+</section>
+{% endblock content %}

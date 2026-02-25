@@ -1,0 +1,139 @@
+.methodology-hero {
+  padding: 50px 0 30px;
+}
+
+.pill-row {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.methodology-grid {
+  padding: 20px 0 40px;
+}
+
+.methodology-grid .grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.formula {
+  background: var(--bg-accent);
+  padding: 14px;
+  border-radius: 12px;
+  margin: 16px 0 10px;
+}
+
+.variables {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  row-gap: 8px;
+  column-gap: 12px;
+  margin-top: 10px;
+}
+
+.variables dt {
+  font-weight: 700;
+}
+
+.variables dd {
+  color: var(--muted);
+}
+
+.assumptions {
+  margin-top: 10px;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.equation-panel {
+  padding: 40px 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.factor-table-section {
+  padding: 40px 0 20px;
+}
+
+.table-wrap {
+  margin-top: 14px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.factor-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.factor-table thead th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-accent);
+}
+
+.factor-table tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.factor-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.equation-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 18px;
+}
+
+.equation-card {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid var(--border);
+}
+
+.steps {
+  padding: 40px 0;
+}
+
+.step-list {
+  margin-top: 14px;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.step-list li {
+  margin-bottom: 10px;
+}
