@@ -1,0 +1,224 @@
+/* Colors */
+/* Rainy theme 5 -Green Digitalization Course and Students Apps-:
+Navbar (background): #8bbbd9
+Navbar (a hover): #466fa6
+Navbar (logo): #568c63
+Navbar (a menu): #2a4359
+Footer (background): #8bbbd9
+*/
+
+/* Google fonts Roboto  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+:root {
+  --teal-900: #0f766e;
+  --teal-800: #115e59;
+  --teal-700: #0f766e;
+  --teal-200: #99f6e4;
+  --teal-100: #ccfbf1;
+  --teal-50: #f0fdfa;
+  --ink-900: #111827;
+  --ink-700: #374151;
+  --white: #ffffff;
+  --blue-btn: #0a66c2;
+  --blue-btn-hover: #004182;
+}
+
+/* CSS utilities */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--teal-50);
+  line-height: 1.6;
+  color: var(--ink-900);
+}
+.container {
+  margin: auto;
+  max-width: 1320px;
+}
+ul { 
+  list-style: none;
+  font-size: 400;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+h1, h2 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+img {
+  width: 100%;
+}
+/* Navbar  */
+.section_navbar {
+  background-color: var(--teal-700);
+  border-bottom: 1px solid var(--teal-800);
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 70px;
+  align-items: center;
+  background-color: var(--teal-700);
+  padding: 0 0px;
+}
+.navbar a {
+  color: #ecfeff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.navbar a:hover{
+  border-bottom: var(--teal-200) 4px solid;
+}
+.navbar a i,
+.navbar_auth a i {
+  margin-right: 6px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+.navbar nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+}
+.navbar_auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+.navbar_auth a {
+  color: #ecfeff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.navbar_auth a:hover {
+  border-bottom: var(--teal-200) 4px solid;
+}
+.navbar .logo {
+  font-weight: 400;
+  margin: 0;
+}
+.navbar .logo .logo_leaf_button {
+  color: inherit;
+  display: inline;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  margin: 0 2px 0 0;
+}
+.navbar .logo .logo_leaf_button:hover {
+  border-bottom: none;
+}
+.text-logo {
+  color: var(--teal-200);
+}
+/* Footer  */
+.section_footer{
+  background-color: var(--teal-800);
+  border-top: 1px solid #134e4a;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  height: 70px;
+  align-items: center;
+  background-color: var(--teal-800);
+  padding: 0 0px;
+}
+.footer_brand {
+  color: #ecfeff;
+  margin: 0;
+}
+.back_to_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-900);
+  background: #ecfeff;
+  border: 1px solid var(--teal-100);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 16px;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+.back_to_top:hover {
+  color: #083344;
+  background: var(--teal-200);
+  border-color: var(--teal-200);
+}
+.back_to_top:focus-visible {
+  outline: 2px solid #ecfeff;
+  outline-offset: 2px;
+}
+
+/* Media query */
+@media(max-width:768px){
+  .navbar {
+    height: 160px;
+    flex-direction: column;
+  }
+  .navbar a {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar_auth {
+    margin: 6px 0 0 0;
+  }
+  .navbar_auth a {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+  .footer {
+    height: auto;
+    gap: 8px;
+    justify-content: center;
+    padding: 10px 0;
+    flex-direction: row;
+  }
+  .footer_brand {
+    font-size: 26px;
+  }
+  .back_to_top {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+  .navbar a:hover{
+    color: #ecfeff;
+    border-bottom: var(--teal-200) 2px solid;
+  }
+  .navbar_auth a:hover{
+    color: #ecfeff;
+    border-bottom: var(--teal-200) 2px solid;
+  }
+}
+
