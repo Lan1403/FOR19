@@ -35,27 +35,39 @@
         {% endif %}
         
     </head>
-    <body>
+    <body id="page-top">
         <section class="section_navbar">
          <div class="container"> 
             <div class="navbar">
               <h1 class="logo">
-                <span class="text-logo" style="color:teal"><i class="fa-solid fa-leaf"></i> Carbon</span> App
+                <span class="text-logo" style="color:teal"><i class="fa-solid fa-chart-line"></i> Carbon</span> App
               </h1>
               <nav>
                 <ul>
                     <li>
-                        <a href="{{url_for('home.home_home')}}">Home</a>
+                        <a class="menu-link" href="{{url_for('home.home_home')}}">
+                          <i class="fa-solid fa-house menu-icon"></i>
+                          Home
+                        </a>
                     </li>
                     <li>
-                        <a href="{{url_for('methodology.methodology_home')}}">Methodology</a>
+                        <a class="menu-link" href="{{url_for('methodology.methodology_home')}}">
+                          <i class="fa-solid fa-book-open menu-icon"></i>
+                          Methodology
+                        </a>
                     </li>
                     <li>
-                        <a href="{{url_for('carbon_app.carbon_app_home')}}">Carbon App</a>
+                        <a class="menu-link" href="{{url_for('carbon_app.carbon_app_home')}}">
+                          <i class="fa-solid fa-chart-line menu-icon"></i>
+                          Carbon App
+                        </a>
                     </li>
             
                     <li>
-                      <a href="{{url_for('aboutUs.aboutUs_home')}}">About Us</a>
+                      <a class="menu-link" href="{{url_for('aboutUs.aboutUs_home')}}">
+                        <i class="fa-solid fa-users menu-icon"></i>
+                        About Us
+                      </a>
                     </li>
                     <li>
                         <a href="{{url_for('user.register_home')}}"> <i class="fa-solid fa-user-plus"></i></a>
@@ -74,46 +86,44 @@
 
         <section class="section_footer">
           <div class="container">
-
-
             <div class="footer">
-              <h1>
-                Carbon App 
-                <a href="#">
-                  <i class="fa-solid fa-circle-up" style="color: #568c63"></i>
-                </a>
-              </h1>
-              
-            <div class="footer_brand">
-              <p>Quick links:</p>
-              <ul>
-              <li>
-                <a href="{{url_for('methodology.methodology_home')}}">Methodology</a>
-              </li>
-              <li>
-                <a href="{{url_for('carbon_app.carbon_app_home')}}">Carbon App</a>
-              </li>
-              <li>
-                <a href="{{url_for('aboutUs.aboutUs_home')}}">About Us</a>
-              </li>
-              <li>
-                <a href="{{url_for('user.register_home')}}">Register</a>
-              </li>
-              <li>
-                <a href="{{url_for('user.login_home')}}">Login</a>
-              </li>
-              </ul>
-              <p>
-                We are the Carbon App, a student-founded app designed to calculate your daily transport emissions!
-              </p>
+              <div class="footer-layout">
+                <div class="footer-left">
+                  <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                      <li><a href="{{url_for('home.home_home')}}">Home</a></li>
+                      <li><a href="{{url_for('methodology.methodology_home')}}">Methodology</a></li>
+                      <li><a href="{{url_for('carbon_app.carbon_app_home')}}">Carbon App</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h3>Quick access</h3>
+                    <ul>
+                      <li><a href="{{url_for('user.login_home')}}">Login</a></li>
+                      <li><a href="{{url_for('user.register_home')}}">Register</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-center">
+                  <h2>Carbon App</h2>
+                  <a class="footer-top-link" href="#page-top" aria-label="Back to top">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </a>
+                </div>
+
+                <div class="footer-right">
+                  <p>Track your transport footprint in minutes and start making lower-emission choices today.</p>
+                  <a class="footer-cta" href="{{url_for('carbon_app.carbon_app_home')}}">Try the Carbon App</a>
+                </div>
+              </div>
+
+              <!-- Bottom bar -->
+              <div class="footer__bottom">
+                <span style="color: black;">COPYRIGHT © CARBONGREEN </span>
+              </div>
             </div>
-
-            <!-- Bottom bar -->
-            <div class="footer__bottom">
-              <span style="color: black;">COPYRIGHT © CARBONGREEN </span>
-            </div>
-
-
           </div>
         </section>
 
