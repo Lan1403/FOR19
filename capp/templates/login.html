@@ -5,20 +5,18 @@
 <section class="section_header_user">
     <div class="container">
     <header class="page-header">
-        <div>
-            <h1> Login <span style="color:teal"> Here </span></h1>
-        </div>
         <form action="/submit" method="POST">
+            <div class="page-center">
             <div class="input-group">
-            <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+            <h3> Welcome <span style="color:teal"> back! </span></h3>
+            <p>Username</p>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <a class="button" type="submit">Log in</a>
+            </div>
             </div>
         </form>
-        <form action="/submit" method="POST">
-            <div class="input-group">
-            <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
-            </div>
-        </form>
-        <button class="button" type="submit">Submit</button>
      </div>
 </section> 
 
