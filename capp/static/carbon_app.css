@@ -18,14 +18,12 @@
 }
 
 
-.wrapper{
-    display: flex;      /* gjør at barna legger seg ved siden av hverandre */
-    gap: 20px;          /* mellomrom mellom boksene */
-    align-items: flex-start; /* justerer toppen */
-}
-.update{
+.entries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px; 
     border: 2px solid teal;
-    background-color: lightseagreen;
+    background-color: white;
     width: 700px; 
     height: 300px;
 }
@@ -34,7 +32,7 @@
     border: 2px solid teal; /* du manglet solid her */
     width: 300px; 
     height: 300px;          /* sett samme høyde hvis du vil */
-    background-color: lightseagreen;
+    background-color: white;
 
 }
 
@@ -45,6 +43,4 @@
     background-color: white;
     margin: 10px;
     padding: 10px;
-    
-
 }
