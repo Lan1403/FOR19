@@ -7,12 +7,11 @@
     <header class="page-header">
         <form action="" method="POST">
             {{ form.hidden_tag() }}
-            <fieldset class='form-group'>
-                <legend class="border-bottom mb-4">Welcome to our <span style="color:teal">app!</legend>
             <div class="page-center">
             <div class="input-group">
+            <fieldset class='form-group'>
+                <legend class="border-bottom mb-4">Welcome to our <span style="color:teal">app!</legend>
             <div class="form-group">
-                <p>Username</p>
                 {{ form.username.label(class='form-control-label') }}
                 {% if form.username.errors %}
                     {{ form.username(class='form-control form-control-lg is-invalid') }}
@@ -26,7 +25,6 @@
                 {% endif %}
             </div>
             <div class="form-group">
-                 <p>Password</p>
                 {{ form.password.label(class='form-control-label') }}
                 {% if form.password.errors %}
                     {{ form.password(class='form-control form-control-lg is-invalid') }}

@@ -5,43 +5,31 @@
      <section class="carbon-page">
         <!-- Header -->
         <header class="page-header">
-        <div>
-            <h2>Carbon App <span style="color:teal"> Calculator </span></h2>
+        <div class="left-side">
+            <h2><span style="color:teal">Carbon</span> App Calculator</h2>
+            <p>Choose your type of transport and calculate the carbon emissions for the distance you travel!</p>
+            <a class="BT" href="{{url_for('methodology.methodology_home')}}">See the methodology</a>
+            <a class="BT">Your data</a>
         </div>
         </header>
 
-        <div class="wrapper">
-        
-            <!---------Update-------->
-            <section class="new entry">
-                <p>Add a new entry:</p>
-                    <div class="entries">
-                        <a class="button" type="submit"><i class="fa-solid fa-car"></i>Car</a>
-                        <a class="button" type="submit"><i class="fa-solid fa-bus"></i>Bus</a>
-                        <a class="button" type="submit"><i class="fa-solid fa-plane"></i>Airplane</a>
-                        <a class="button" type="submit"><i class="fa-solid fa-ferry"></i>Ferry</a>
-                        <a class="button" type="submit"><i class="fa-solid fa-train"></i>Train</a>
-                        <a class="button" type="submit"><i class="fa-solid fa-train-tram"></i>Bybane</a>
-                        <a class="button" type="submit"><i class="fa-solid fa-motorcycle"></i>Motorcycle</a>
-                        <a class="button" type="submit"><i class="fa-solid fa-bicycle"></i>Cycling</a>
-                        <a class="button" type="submit"><i class="fa-solid fa-person-walking"></i>Walking</a>
-                    </div>
-                
-
-            </section>
-
-            <!--------Alternative------->
-            <section class="alternative"> 
-                <h3> Smart Alternative</h3>
-
-            <div class="recAlt"> 
-                <h5> Recommended alternative</h5>
+        <section class="wrapper">
+            <div class="right-side">
+                <div class="new-entry">
+                    <a class="BT"><i class="fa-solid fa-car"></i>Car</a>
+                    <a class="BT"><i class="fa-solid fa-bus"></i>Bus</a>
+                    <a class="BT"><i class="fa-solid fa-plane"></i>Airplane</a>
+                    <a class="BT"><i class="fa-solid fa-ferry"></i>Ferry</a>
+                    <a class="BT" ><i class="fa-solid fa-train"></i>Train</a>
+                    <a class="BT" ><i class="fa-solid fa-train-tram"></i>Bybane</a>
+                    <a class="BT" ><i class="fa-solid fa-motorcycle"></i>Motorcycle</a>
+                    <a class="BT" ><i class="fa-solid fa-bicycle"></i>Cycling</a>
+                    <a class="BT" ><i class="fa-solid fa-person-walking"></i>Walking</a>
+                </div>
             </div>
+        </section>
 
-            
-
-            </section>
-        </div>
+    </div>
 
 </section>
     
