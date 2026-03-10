@@ -24,6 +24,7 @@ p {
 }
 
 .section_header_home_video {
+  position: relative;
   width: 100vw;
   height: 100vh;
   margin-left: calc(50% - 50vw);
