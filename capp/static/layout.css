@@ -23,6 +23,9 @@ body {
   background: #fff;
   line-height: 1.6;
 }
+:root {
+  --chrome-bg: #eef7ff;
+}
 .container {
     max-width: 1500px;
     margin: 0 auto;
@@ -50,6 +53,7 @@ img {
 /* Navbar  */
 .section_navbar {
   height: 70px;
+  background: var(--chrome-bg);
 }
 .section_navbar .container {
   height: 100%;
@@ -106,6 +110,7 @@ img {
 }
 .section_footer {
   border-top: 1px solid #000;
+  background: var(--chrome-bg);
 }
 
 /*-------------------Footer----------------------------------------  */
@@ -113,6 +118,7 @@ img {
 .footer {
   min-height: 250px;
   padding: 34px 0 14px;
+  background: var(--chrome-bg);
 }
 
 .footer-layout {
