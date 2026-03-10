@@ -8,9 +8,7 @@
     box-sizing: border-box;
     outline: none;
 }
-.input-box input:focus {
-    background-color: #e0e0e0;           /* slightly darker grey when active */
-}
+
 .input-box {
     display: flex;
     flex-direction: column;  /* stacks inputs on top of each other */

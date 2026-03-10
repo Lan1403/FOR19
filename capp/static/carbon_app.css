@@ -4,10 +4,11 @@
     height: 400px;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url('/static/icons/Twelve dark blue cloud icons.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url('/static/icons/icons_background.png');
     background-size: cover;
+    background-size: 30%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 .right-side {
     width: 50%;
