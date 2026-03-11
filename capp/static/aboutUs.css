@@ -10,15 +10,21 @@
     color: white;
 }
 
+.brandText{
+    color: #2a4359;
+    font-weight: 300;
+
+}
+
 .headerTitle h1{
     font-family: 'Times New Roman', Times, serif;
     font-size: 130px;
-    font-weight: 90px;
+    font-weight: 90;
     text-shadow: 0px 0px 5px black;
 }
 
 .developersContainer{
-    background-color: white;
+    background-color: #f8fafb;
 }
 
 .devTitle{
@@ -37,7 +43,6 @@
     display: flex;
     align-items:stretch;
     justify-content: center;
-    background-color: white;
     flex-wrap: wrap;
     gap: 30px;
     padding: 40px;
