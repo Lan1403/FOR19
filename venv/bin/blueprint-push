@@ -1,4 +1,4 @@
-#!/Users/sabrinadanhassan/Library/Mobile Documents/com~apple~CloudDocs/nhh/vårSemester2026/For19/try1/FOR19/venv/bin/python3.11
+#!/Users/hanus/Desktop/Luiss/coding/GDAP/app/FOR19/venv/bin/python3.13
 
 from ConfigParser import NoOptionError, NoSectionError
 import logging

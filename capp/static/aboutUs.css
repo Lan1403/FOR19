@@ -7,7 +7,7 @@
 }
 
 .devTitle{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto';
     text-align: center;
     padding: 20px;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
@@ -15,12 +15,16 @@
 
 .containerTeam{
     display: flex;
-    align-items:stretch;;
+    align-items:stretch;
     justify-content: center;
     background-color: white;
     flex-wrap: wrap;
     gap: 30px;
     padding: 40px;
+}
+
+.containerTeam > * {
+    flex: 0 1 calc(30% - 20px); /* 3 per row, accounting for the gap */
 }
 
 .boxCard{

@@ -59,7 +59,7 @@ p {
   right: 0;
   top: 0;
   height: 1px;
-  background: lightskyblue; /* lys strek */
+  background: lightskyblue; 
   
 }
 
@@ -68,7 +68,7 @@ p {
   margin: 0;
   font-size: 28px;
   font-weight: 400;
-  color: #78aef5; /* lys blå */
+  color: #2a4359;
 
 }
 
@@ -87,16 +87,15 @@ p {
 .stat-number{
   font-size: clamp(50px, 6vw, 110px);
   font-weight: 300;
-  color: #78aef5;
+  color: #2a4359;
   line-height: 1;
 }
 
-/* liten tekst under */
 .stat-label{
   margin-top: 10px;
   font-size: 12px;
   letter-spacing: 1.5px;
-  color: #78aef5;
+  color: #2a4359;
   text-transform: uppercase;
 }
 
@@ -111,7 +110,7 @@ p {
   right: 0;
   bottom: 0;
 
-  height: 160px; /* hvor “lang” fade skal være */
+  height: 160px; 
   /*
   background: linear-gradient(
     to bottom,
