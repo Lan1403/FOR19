@@ -3,9 +3,12 @@
   
 <!-- Header -->
 <section class="section_header_home_video">
-      <video class="header-video" autoplay muted loop playsinline>
-          <source src="{{ url_for('static', filename='icons/AboutUs.mp4') }}" type="video/mp4">
-      </video>
+  <div class="headerTitle"> 
+    <h1> About us</h1>
+  </div>
+   <video class="header-video" autoplay muted loop playsinline>
+        <source src="{{ url_for('static', filename='icons/AboutUs.mp4') }}" type="video/mp4">
+    </video>
 </section>
 
 <!-- Developers -->
@@ -13,6 +16,7 @@
 <section class="developersContainer">
 
   <h1 class="devTitle"> Meet our <span style="color:#2a4359"> TEAM</span></h1>
+  <p class="infoTeam">We are a student team developing Carbon App, a platform that helps businesses and individuals to understand and reduce their carbon emissions. </p>
 
   <div class="line"></div>
 
