@@ -1,0 +1,246 @@
+/* ===== Variables (inspired by Green Journey + blue mission panels) ===== */
+:root {
+  --green-primary: #2d8a4e;
+  --green-dark: #1e6b3a;
+  --blue-mission: #1a7fb8;
+  --blue-stat: #0d4d73;
+  --text-dark: #2c3e50;
+  --text-muted: #5a6c7d;
+  --white: #ffffff;
+}
+
+/* ===== Base ===== */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+/* ===== Site header (logo + nav) ===== */
+.site_header {
+  background: var(--white);
+  border-bottom: 1px solid #e8ecef;
+  padding: 1rem 0;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+
+.logo_icon {
+  font-size: 1.75rem;
+}
+
+.logo_text_alt {
+  color: var(--text-dark);
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav_links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav_links a:hover {
+  color: var(--green-primary);
+}
+
+.nav_btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.nav_btn_primary {
+  background-color: var(--green-primary);
+  color: var(--white) !important;
+}
+
+.nav_btn_primary:hover {
+  background-color: var(--green-dark);
+  color: var(--white) !important;
+}
+
+/* ===== Call to action section ===== */
+.section_cta {
+  padding: 4rem 0;
+  background: var(--white);
+}
+
+.section_cta .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.cta_content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.cta_heading {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  color: var(--green-primary);
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.cta_text {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--text-dark);
+  margin-bottom: 1.75rem;
+  max-width: 52ch;
+}
+
+.container_buttons_cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn_cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+  border: 2px solid transparent;
+}
+
+.btn_cta_primary {
+  background-color: var(--green-primary);
+  color: var(--white);
+}
+
+.btn_cta_primary:hover {
+  background-color: var(--green-dark);
+  color: var(--white);
+}
+
+.btn_cta_secondary {
+  background-color: transparent;
+  color: var(--green-primary);
+  border-color: var(--green-primary);
+}
+
+.btn_cta_secondary:hover {
+  background-color: var(--green-primary);
+  color: var(--white);
+}
+
+.cta_image {
+  flex-shrink: 0;
+}
+
+.cta_image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Explain the app: mission + stat ===== */
+.section_explain {
+  display: flex;
+  flex-direction: column;
+}
+
+.explain_mission {
+  background: linear-gradient(180deg, #4a9fd4 0%, var(--blue-mission) 100%);
+  color: var(--white);
+  padding: 4rem 0;
+}
+
+.explain_heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.explain_text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 65ch;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.explain_stat {
+  background: var(--blue-stat);
+  color: var(--white);
+  padding: 3rem 0;
+}
+
+.explain_stat .container {
+  text-align: center;
+}
+
+.stat_label {
+  font-size: 1rem;
+  opacity: 0.95;
+  margin-bottom: 0.5rem;
+}
+
+.stat_value {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0.5rem 0 1rem;
+}
+
+.stat_source {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.stat_source a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.stat_source a:hover {
+  opacity: 0.85;
+}
+
+/* Responsive: stack CTA text and image on small screens */
+@media (max-width: 768px) {
+  .section_cta .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta_text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container_buttons_cta {
+    justify-content: center;
+  }
+}

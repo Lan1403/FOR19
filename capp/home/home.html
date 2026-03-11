@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- Call to action section -->
+<section class="section_cta">
+  <div class="container">
+    <div class="cta_content">
+      <h1 class="cta_heading">Let's make an impact together</h1>
+      <p class="cta_text">
+        Welcome to GreenJourney, your go-to app for identifying and mitigating carbon emissions for both individuals and organizations. Our app helps you pinpoint the main contributors to your carbon footprint and guides you towards meaningful actions to reduce your environmental impact.
+      </p>
+      <div class="container_buttons_cta">
+        <a href="#" class="btn btn_cta btn_cta_primary">Register</a>
+        <a href="#" class="btn btn_cta btn_cta_secondary">Login</a>
+      </div>
+    </div>
+    <div class="cta_image">
+      <img
+        src="{{ url_for('static', filename='icons/carbon_app.svg') }}"
+        width="325"
+        height="325"
+        alt="Carbon footprint tracking"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Explain the app: mission + impact stat -->
+<section class="section_explain">
+  <div class="explain_mission">
+    <div class="container">
+      <h2 class="explain_heading">Our mission</h2>
+      <p class="explain_text">
+        At the heart of our initiative lies a commitment to dramatically reduce carbon emissions from travel and daily life, driving a shift towards sustainability. Our mission is to pave the way to a zero-emission future by 2050, guided by the ambitious principles of the United Nations Sustainable Development Goals.
+      </p>
+    </div>
+  </div>
+  <div class="explain_stat">
+    <div class="container">
+      <p class="stat_label">Total CO2 Emissions (Million Tonnes)</p>
+      <p class="stat_value">2,615,096.118</p>
+      <p class="stat_source">Source: <a href="https://www.oxfordmartin.ox.ac.uk/" target="_blank" rel="noopener">Environmental Change Institute, University of Oxford</a></p>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
