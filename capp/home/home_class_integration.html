@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- Header (logo + nav) - use this if your layout.html has no header -->
+<header class="site_header">
+  <div class="container">
+    <div class="header_inner">
+      <a href="#" class="logo">
+        <span class="logo_icon">🌿</span>
+        <span class="logo_text">Green<span class="logo_text_alt">Journey</span></span>
+      </a>
+      <nav class="nav_links">
+        <a href="#">About</a>
+        <a href="#" class="nav_btn">Register</a>
+        <a href="#" class="nav_btn nav_btn_primary">Login</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Call to action section -->
+<section class="section_header_home section_cta">
+  <div class="container">
+    <div class="header_home">
+      <div class="box">
+        <h1 class="cta_heading" style="font-size: clamp(2rem, 5vw, 2.75rem); color: #2d8a4e;">Let's make an impact together</h1>
+        <p class="cta_text" style="text-align:left;">
+          Welcome to GreenJourney, your go-to app for identifying and mitigating carbon emissions for both individuals and organizations. Our app helps you pinpoint the main contributors to your carbon footprint and guides you towards meaningful actions to reduce your environmental impact.
+        </p>
+        <div class="container_buttons_header_home container_buttons_cta">
+          <a href="#" class="btn btn-primary btn-lg mr-2" style="background-color:#2d8a4e; border-color:#2d8a4e;">Register</a>
+          <a href="#" class="btn btn-outline-primary btn-lg mr-2" style="border-color:#2d8a4e; color:#2d8a4e;">Login</a>
+        </div>
+      </div>
+      <div class="box">
+        <img
+          src="{{ url_for('static', filename='icons/carbon_app.svg') }}"
+          width="325"
+          height="325"
+          alt="Carbon footprint tracking"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Explain the app: mission + impact stat -->
+<section class="section_explain">
+  <div class="explain_mission" style="background: linear-gradient(180deg, #4a9fd4 0%, #1a7fb8 100%); color: #fff; padding: 4rem 0;">
+    <div class="container">
+      <h2 style="text-align:center; font-size: 2.25rem; margin-bottom: 1.5rem;">Our mission</h2>
+      <p style="font-size: 1.1rem; line-height: 1.7; max-width: 65ch; margin: 0 auto;">
+        At the heart of our initiative lies a commitment to dramatically reduce carbon emissions from travel and daily life, driving a shift towards sustainability. Our mission is to pave the way to a zero-emission future by 2050, guided by the ambitious principles of the United Nations Sustainable Development Goals.
+      </p>
+    </div>
+  </div>
+  <div class="explain_stat" style="background: #0d4d73; color: #fff; padding: 3rem 0;">
+    <div class="container" style="text-align: center;">
+      <p style="margin-bottom: 0.5rem;">Total CO2 Emissions (Million Tonnes)</p>
+      <p style="font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 700; margin: 0.5rem 0 1rem;">2,615,096.118</p>
+      <p style="font-size: 0.9rem;">Source: <a href="https://www.oxfordmartin.ox.ac.uk/" target="_blank" rel="noopener" style="color: #fff; text-decoration: underline;">Environmental Change Institute, University of Oxford</a></p>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
